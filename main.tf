@@ -4,9 +4,9 @@ resource "aws_s3_bucket" "b" {
   bucket = var.bucket_name
   acl    = "public"
 
-  versioning {
-    enabled = true
-  }
+  #  versioning {
+  #    enabled = true
+  #  }
 
   tags = {
     Name = var.bucket_name
